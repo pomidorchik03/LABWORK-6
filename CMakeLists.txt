@@ -7,6 +7,13 @@ project(lab VERSION ${PROJECT_VERSION})
 
 add_executable(lab)
 
+target_include_directories(lab PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/model
+    ${CMAKE_CURRENT_SOURCE_DIR}/controller
+    ${CMAKE_CURRENT_SOURCE_DIR}/view
+)
+
+
 target_sources(lab PRIVATE
     main.cpp 
     model/coloredObject.cpp 
