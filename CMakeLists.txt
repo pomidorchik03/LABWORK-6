@@ -34,7 +34,7 @@ if (MSVC)
 
 else ()
     target_compile_options(lab PRIVATE
-        -Wall -Wextra -pedantic -Werror
+        -Wall -Wextra -pedantic 
     )
 
 endif()
