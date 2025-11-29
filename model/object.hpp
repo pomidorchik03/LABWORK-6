@@ -18,7 +18,7 @@ protected:
     {
         Vertex() : Position() {};
         Vertex(int x, int y): Position(x,y) {};        
-    }
+    };
     std::vector<Vertex> vertex_;
     std::string name_;
     Position center_;
