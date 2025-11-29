@@ -6,7 +6,7 @@ class Object
 protected:
     class Position
     {
-        private:
+        protected:
             int x_;
             int y_;
 
@@ -14,8 +14,14 @@ protected:
             Position() : x_(0), y_(0) {};
             Position(int x, int y) : x_(x), y_(y) {}; 
     };
+    class Vertex : public Position
+    {
+        Vertex() : Position() {};
+        Vertex(int x, int y): Position(x,y) {};        
+    }
+    std::vector<Vertex> vertex_;
     std::string name_;
-    Position pos_;
+    Position center_;
 
 public:
     Object();
