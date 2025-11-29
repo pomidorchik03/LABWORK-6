@@ -2,8 +2,8 @@
 #include <iostream>
 
 
-Object::Object() : vertex() ,name_("untitled"), center_(0,0) {}
-Object::Object(const std::string& name, const int x, const int y) : vertex(), name_(name), pos_(x, y) {}
+Object::Object() : name_("untitled"), center_(0,0) {}
+Object::Object(const std::string& name, const int x, const int y) : name_(name), pos_(x, y) {}
 
 void Object::setName(const std::string& name)
 {
